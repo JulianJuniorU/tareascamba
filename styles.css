@@ -188,3 +188,58 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+
+/*classroom   */
+
+.task-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+    position: relative;
+}
+
+.task-item h4 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+}
+
+.task-item p {
+    margin: 4px 0;
+    color: #666;
+}
+
+.add-task-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.add-task-btn:hover {
+    background-color: #218838;
+}
+
+#taskModal textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.course-tasks {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.course-tasks h3 {
+    margin: 0 0 12px 0;
+    color: #2c3e50;
+}

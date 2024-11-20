@@ -36,32 +36,42 @@
             <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
         </div>
     </div>
-        /*aqui voy a copiar y pegar*/
-        <div class="main-content">
-            <div class="header">
-                <h1>Mis Clases</h1>
-                <div class="header-actions">
-                    <input type="text" class="search-box" placeholder="Buscar clases...">
-                    <button class="add-class-btn" onclick="openModal()">
-                        <i class="fas fa-plus"></i> Agregar Clase
-                    </button>
-                </div>
-            </div>
-            <div class="courses-grid" id="coursesGrid">
+    <div class="main-content">
+        <div class="header">
+            <h1>Mis Clases</h1>
+            <div class="header-actions">
+                <input type="text" class="search-box" placeholder="Buscar clases...">
+                <button class="add-class-btn" onclick="openModal()">
+                    <i class="fas fa-plus"></i> Agregar Clase
+                </button>
             </div>
         </div>
-    
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <h2>Agregar Nueva Clase</h2>
-                <input type="text" id="className" placeholder="Nombre de la Clase">
-                <input type="text" id="semester" placeholder="Semestre">
-                <input type="text" id="studentsCount" placeholder="Cantidad de Estudiantes">
-                <button onclick="addClass()">Agregar Clase</button>
-            </div>
-        </div>    
-    /*aqui termina*/
+        <div class="courses-grid" id="coursesGrid">
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Agregar Nueva Clase</h2>
+            <input type="text" id="className" placeholder="Nombre de la Clase">
+            <input type="text" id="semester" placeholder="Semestre">
+            <input type="text" id="studentsCount" placeholder="Cantidad de Estudiantes">
+            <button onclick="addClass()">Agregar Clase</button>
+        </div>
+    </div>
+
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeTaskModal()">&times;</span>
+            <h2>Agregar Nueva Tarea</h2>
+            <input type="text" id="taskName" placeholder="Nombre de la Tarea">
+            <input type="date" id="taskDueDate" placeholder="Fecha de Entrega">
+            <textarea id="taskDescription" placeholder="Descripción de la Tarea"></textarea>
+            <button onclick="addTask()">Agregar Tarea</button>
+        </div>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>

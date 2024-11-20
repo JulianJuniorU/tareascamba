@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Profesor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logoU.png">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="tareas.png" alt="Logo">
+            <span class="logo-text">Mi cuenta </span>
+        </div> 
+        <div class="menu-item">
+            <i class="fas fa-home"></i> Inicio
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-calendar"></i> Calendario
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-tasks"></i> Gestión de Clases
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-chart-bar"></i> Estadísticas
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-users"></i> Estudiantes
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-cog"></i> Ajustes
+        </div>
+        <div class="menu-item" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+        </div>
+    </div>
+        /*aqui voy a copiar y pegar*/
+        <div class="main-content">
+            <div class="header">
+                <h1>Mis Clases</h1>
+                <div class="header-actions">
+                    <input type="text" class="search-box" placeholder="Buscar clases...">
+                    <button class="add-class-btn" onclick="openModal()">
+                        <i class="fas fa-plus"></i> Agregar Clase
+                    </button>
+                </div>
+            </div>
+            <div class="courses-grid" id="coursesGrid">
+            </div>
+        </div>
+    
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Agregar Nueva Clase</h2>
+                <input type="text" id="className" placeholder="Nombre de la Clase">
+                <input type="text" id="semester" placeholder="Semestre">
+                <input type="text" id="studentsCount" placeholder="Cantidad de Estudiantes">
+                <button onclick="addClass()">Agregar Clase</button>
+            </div>
+        </div>    
+    /*aqui termina*/
+    <script src="scripts.js"></script>
+</body>
+</html>

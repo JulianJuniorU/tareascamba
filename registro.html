@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="icon" href="logoU.png">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Crear Cuenta</h2>
+        <form id="registerForm" action="register.php" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstname">Nombre</label>
+                    <input type="text" id="firstname" name="firstname" required placeholder="Tu nombre">
+                    <span class="error-message" id="firstnameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname" name="lastname" required placeholder="Tu apellido">
+                    <span class="error-message" id="lastnameError"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required placeholder="Crea tu contraseña">
+                <div class="password-requirements">
+                     La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, un número y un carácter especial.
+                </div>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Contraseña</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirma tu contraseña">
+                <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+            <div class="terms">
+                Al crear una cuenta, aceptas nuestros 
+                <a href="#">Términos y Condiciones</a> y 
+                <a href="#">Política de Privacidad</a>
+            </div>
+            <button type="submit" class="submit-btn">Crear Cuenta</button>
+            <div class="login-section">
+                ¿Ya tienes una cuenta? <a href="login.html" class="login-link">Inicia Sesión</a>
+            </div>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>

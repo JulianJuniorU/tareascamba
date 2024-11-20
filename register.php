@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Error en el registro: " . $stmt->error;
         }
     } else {
-        echo 'Correo ya registrado. <a href="login.html">Inicia sesión aquí</a>';
+        echo 'El correo ya ha sido registrado. <a href="login.html">Inicia sesión aquí</a>';
     }
 
     $stmt->close();
